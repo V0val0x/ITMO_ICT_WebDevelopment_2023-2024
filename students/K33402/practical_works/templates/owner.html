@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные о владельце</title>
+</head>
+<body>
+<h1>Информация о владельце</h1>
+<p>Фамилия: {{ owner.last_name }}</p>
+<p>Имя: {{ owner.first_name }}</p>
+<p>Дата рождения: {{ owner.birth_date|date:"Y-m-d" }}</p>
+</body>
+</html>
