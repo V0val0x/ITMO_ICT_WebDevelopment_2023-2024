@@ -1,0 +1,78 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-background: #121212; /* темный фон */
+  --color-background-soft: #1e1e1e; /* более темный оттенок фона */
+  --color-background-mute: #333333; /* еще более темный оттенок фона */
+
+  --color-border: #444444; /* цвет границ */
+  --color-border-hover: #555555; /* цвет границ при наведении */
+
+  --color-heading: #ffffff; /* цвет заголовков */
+  --color-text: #cccccc; /* основной цвет текста */
+}
+
+/* Изменения для темного режима */
+@media (prefers-color-scheme: dark) {
+  /* оставляем темные цвета, так как это уже темный режим */
+}
+
+/* Общие стили */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 16px; /* немного увеличил размер текста для лучшей читаемости */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Дополнительные стили, которые могут придать сайту стильный вид */
+/* Например, стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-heading);
+}
+
+/* Добавим тень к блокам */
+.block {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для кнопок */
+button, .button {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button:hover, .button:hover {
+  background-color: var(--color-background-soft);
+  color: var(--color-heading);
+  border-color: var(--color-border-hover);
+}

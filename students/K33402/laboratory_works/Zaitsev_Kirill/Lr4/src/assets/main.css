@@ -1,0 +1,45 @@
+@import './base.css';
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Изменения для ссылок */
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: color 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  /* Изменения для hover-эффекта у ссылок */
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* Изменения для контейнера приложения */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  /* Изменения для планшетов и десктопов */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
