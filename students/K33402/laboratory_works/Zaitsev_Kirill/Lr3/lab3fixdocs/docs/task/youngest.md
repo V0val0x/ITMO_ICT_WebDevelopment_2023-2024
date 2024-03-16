@@ -1,0 +1,55 @@
+# Сколько в библиотеке читателей младше 20 лет?
+
+***URL*** : `/library/reader/youngest/`
+
+***Method*** : `GET`
+
+***Auth required*** : YES
+
+***Permission required*** : None
+
+## Success Responses
+
+    HTTP 200 OK
+    Allow: GET, HEAD, OPTIONS
+    Content-Type: application/json
+    Vary: Accept
+    
+    [
+        {
+            "id": 1,
+            "full_name": "Круглов В.В.",
+            "passport": "1234123456",
+            "birth_date": "2003-03-11",
+            "phone_number": "+79939614888",
+            "education": "н",
+            "degree": false,
+            "registration_date": "2024-01-06",
+            "reading_ticket": 1223,
+            "reading_room": 1
+        },
+        {
+            "id": 2,
+            "full_name": "Зайцев К.Д.",
+            "passport": "2441130",
+            "birth_date": "2003-09-13",
+            "phone_number": "+79819068181",
+            "education": "н",
+            "degree": false,
+            "registration_date": "2024-01-06",
+            "reading_ticket": 1124,
+            "reading_room": 1
+        },
+        {
+            "id": 3,
+            "full_name": "Александров Александр Александрович",
+            "passport": "1436228",
+            "birth_date": "2003-10-27",
+            "phone_number": "79819057474",
+            "education": "с",
+            "degree": false,
+            "registration_date": "2024-01-08",
+            "reading_ticket": 5,
+            "reading_room": 4
+        }
+    ]

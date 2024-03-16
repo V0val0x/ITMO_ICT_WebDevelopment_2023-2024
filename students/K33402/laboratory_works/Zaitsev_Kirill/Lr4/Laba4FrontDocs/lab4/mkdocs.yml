@@ -1,0 +1,43 @@
+site_name: My Docs
+dev_addr: 127.0.0.1:8080
+
+nav:
+  - Components:
+      -"AddAuthor": addauthor.md
+      -"Authorlist": authorlist.md
+      -"AuthorPage": authorpage.md
+      -"AddBook": addbook.md
+      -"BookList": booklist.md
+      -"BookPage": bookpage.md
+      -"AddBookCopy": addbookcopy.md
+      -"BookCopyList": bookcopylist.md
+      -"BookCopyPage": bookcopypage.md
+      -"AddBookTake": addbooktake.md
+      -"BookTakeList": booktakelist.md
+      -"BookTakePage": booktakepage.md
+      -"LastMonth": lastmonth.md
+      -"AddCategory": addcategory.md
+      -"CategoryList": categorylist.md
+      -"CategoryPage": categorypage.md
+      -"AddReader": addreader.md
+      -"ReaderList": readerlist.md
+      -"ReaderPage": readerpage.md
+      -"ShowBookTaken": showbooktaken.md
+      -"YoungestReader": youngestreader.md
+      -"AddReadingRoom": addreadingroom.md
+      -"ReadingRoomList": readingroomlist.md
+      -"ReadingRoomPage": readingroompage.md
+      -"ShowReaders": showreaders.md
+      -"LoginPage": loginpage.md
+      -"RegisterPage": registerpage.md
+
+  - Router:
+    - "router": router.md
+
+  - Stores:
+    - "TokenStore": tokenstore.md
+  - Main:
+      - "AppVue": app.md
+      - "AxiosInstance": axiosinstance.md
+      - "Main": main.md
+      - "Vue.config": vueconfig.md

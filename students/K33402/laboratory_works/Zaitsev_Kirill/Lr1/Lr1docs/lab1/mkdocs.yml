@@ -1,0 +1,27 @@
+site_name: My Docs
+dev_addr: 127.0.0.1:8080
+
+nav:
+  - Task1:
+      -"Client": task1/client.md
+      -"Server": task1/server.md
+
+  - Task2:
+      -"Client": task2/mathclient.md
+      -"Server": task2/mathserver.md
+
+  - Task3:
+      -"Client": task3/httpclient.md
+      -"Server": task3/httpserver.md
+
+  - Task4:
+      -"Client": task4/chatclient.md
+      -"Server": task4/chatserver.md
+
+  - Task5:
+      -"Client": task5/webclient.md
+      -"Server": task5/webserver.md
+      -"Grades": task5/grades.md
+
+  - Main:
+      - "Main": main.md
